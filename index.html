@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Tip calculator app by codernineteen</title>
 
   
 </head>
@@ -14,39 +19,48 @@
   <h1>spli<br/>tter</h1>
   <div class="flexContainer">
 
-    <div class="inputSection">
+    <div class="wrapperCol">
 
-      <h2 class="leftHeaders">Bill</h2>
-      <div class="eachSection">
-        <input type="text" class="totalBill">
+      <div class="inputSection">
+
+        <h2 class="leftHeaders">Bill</h2>
+        <div class="eachSection">
+          <input type="text" class="totalBill">
+        </div>
+        
+        <h2 class="leftHeaders">Select Tip %</h2>
+        <div class="gridContainer">
+          <div class="percentage five">5%</div>
+          <div class="percentage ten">10%</div>
+          <div class="percentage fifteen">15%</div>
+          <div class="percentage twentyFive">25%</div>
+          <div class="percentage fifty">50%</div>
+          <div class="percentage custom">40%</div>
+        </div>
+  
+        <h2 class="leftHeaders">Number of People</h2>
+        <div class="eachSection">
+          <input type="text" class="totalPeople">
+        </div>
+  
       </div>
+
+    </div>
+
+    <div class="wrapperCol">
+
+      <div class="resultSection">
+        <h2 class="rightHeaders">Tip Amount</h2>
+        <p>/ person</p>
       
-      <h2 class="leftHeaders">Select Tip %</h2>
-      <div class="gridContainer">
-        <div class="percentage five">5%</div>
-        <div class="percentage ten">10%</div>
-        <div class="percentage fifteen">15%</div>
-        <div class="percentage twentyFive">25%</div>
-        <div class="percentage fifty">50%</div>
-        <div class="percentage custom">40%</div>
-      </div>
-
-      <h2 class="leftHeaders">Number of People</h2>
-      <div class="eachSection">
-        <input type="text" class="totalPeople">
+        <h2 class="rightHeaders">Total</h2>
+        <p>/ person</p>
+      
+        <input type="submit" value="RESET">
       </div>
 
     </div>
-
-    <div class="resultSection">
-      <h2 class="rightHeaders">Tip Amount</h2>
-      <p>/ person</p>
     
-      <h2 class="rightHeaders">Total</h2>
-      <p>/ person</p>
-    
-      <input type="submit" value="RESET">
-    </div>
   </div>
  
   

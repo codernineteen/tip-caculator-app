@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c5e4e7;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  color: #406365;
+  letter-spacing: 0.5rem;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  width: 114rem;
+  height: 50rem;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.wrapperCol {
+  flex: 1;
+  padding: 3rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
