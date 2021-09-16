@@ -31,7 +31,7 @@ h1 {
 .flexContainer {
   display: flex;
   flex-direction: row;
-  width: 114rem;
+  width: 112rem;
   height: 50rem;
   background-color: #fff;
   border-radius: 3rem;
@@ -39,7 +39,7 @@ h1 {
 
 .wrapperCol {
   flex: 1;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .gridContainer {
@@ -47,4 +47,63 @@ h1 {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  margin-bottom: 4rem;
+}
+
+.eachSection {
+  margin-bottom: 4rem;
+}
+
+.leftHeaders {
+  margin-bottom: 0.5rem;
+  color: #697d7e;
+}
+
+.totalBill,
+.totalPeople {
+  width: 100%;
+  height: 5rem;
+  background-color: #f3f8fb;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.percentage {
+  height: 5rem;
+  background-color: #00474b;
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+
+.percentage:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+
+.percentage:active {
+  background-color: #26c2ad;
+  color: #00474b;
+}
+
+.custom {
+  width: 16.2rem;
+  margin: 0.5rem;
+  padding-left: 1.5rem;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  text-align: inherit;
+  background-color: #f3f8fb;
+  color: #718e8e;
+  font-weight: 700;
+  border: none;
+}
+
+.custom:focus {
+  outline: 3px solid #26c2ad;
+  border-radius: 0.5rem;
 }
