@@ -21,6 +21,12 @@ body {
   background-color: #c5e4e7;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 h1 {
   text-transform: uppercase;
   margin-bottom: 5rem;
@@ -52,6 +58,7 @@ h1 {
 
 .eachSection {
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .leftHeaders {
@@ -67,6 +74,12 @@ h1 {
   border: none;
   border-radius: 0.5rem;
   transition: all 0.3s;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: end;
+  padding-right: 1.5rem;
+  color: #00474b;
+  font-family: inherit;
 }
 
 .totalBill:hover,
@@ -81,6 +94,18 @@ h1 {
   background-color: #f3f8fb;
   box-shadow: 0 0 0 2px #26c2ad;
   text-align: end;
+}
+
+.hidden {
+  display: none;
+  color: #e37051;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hiddenTwo {
+  box-shadow: 0 0 0 2px #e37051;
 }
 
 .percentage {
@@ -102,7 +127,7 @@ h1 {
   color: #00474b;
 }
 
-.percentage:focus {
+.selected {
   background-color: #26c2ad;
   color: #00474b;
 }
@@ -111,6 +136,7 @@ h1 {
   width: 16.2rem;
   background-color: #f3f8fb;
   color: #718e8e;
+  padding-right: 1.5rem;
 }
 
 .custom:focus {

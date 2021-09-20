@@ -23,24 +23,26 @@
 
       <div class="inputSection">
 
-        <h2 class="leftHeaders">Bill</h2>
         <div class="eachSection">
-          <input type="text" class="totalBill">
+          <h2 class="leftHeaders">Bill</h2>
+          <h2 class="hidden">Can't be zero</h2>
+          <input type="number" class="totalBill">
         </div>
         
         <h2 class="leftHeaders">Select Tip %</h2>
-        <div class="gridContainer">
+        <form class="gridContainer">
           <input type="button" class="percentage five" value="5%">
           <input type="button" class="percentage ten" value="10%">
           <input type="button" class="percentage fifteen" value="15%">
           <input type="button" class="percentage twentyFive" value="25%">
           <input type="button" class="percentage fifty" value="50%">
           <input type="number" class="percentage custom" placeholder="Custom">
-        </div>
-  
-        <h2 class="leftHeaders">Number of People</h2>
+        </form>
+
         <div class="eachSection">
-          <input type="text" class="totalPeople">
+          <h2 class="leftHeaders">Number of People</h2>
+          <h2 class="hidden">Can't be zero</h2>
+          <input type="number" class="totalPeople">
         </div>
   
       </div>
@@ -65,6 +67,6 @@
     
   </div>
  
-  
+  <script src="assets/input.js"></script>
 </body>
 </html>
