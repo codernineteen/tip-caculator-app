@@ -4,17 +4,23 @@ const tipPercent = document.querySelectorAll(".percentage");
 const validateStyle = document.querySelector(".hidden");
 const validateStyleTwo = document.querySelector(".hiddenTwo");
 const resetBtn = document.querySelector(".resetButton");
+const tipAmount = document.querySelector(".per");
+const totalAmount = document.querySelector(".total");
 
 
 let percentValue = 0;
 let billValue = 0;
 let peopleValue = 0;
+let result;
 
 bill.addEventListener('keyup', keyupFuncOne);
+bill.addEventListener('change', tipCalculator);
 people.addEventListener('keyup', keyupFuncTwo);
+people.addEventListener('change', tipCalculator);
 resetBtn.addEventListener('click', resetValues);
 
 for (let i of tipPercent) {
+    i.addEventListener('change', tipCalculator);
     if (i.classList[1] !== "custom") {
         i.addEventListener('click', clickFunc);
     } else {
@@ -63,8 +69,8 @@ function keyupFuncTwo(evt) {
 
 }
 
-
 function keyupFuncThree(evt) {
+    evt.preventDefault();
     let tempValue = evt.target.value;
     if (tempValue === "0" || tempValue === "") {
         evt.target.classList.add("hiddenThree");
@@ -82,27 +88,20 @@ function keyupFuncThree(evt) {
 }
 
 function tipCalculator() {
-    console.log(billValue*percentValue/100/peoplevalue);
-    return billValue*percentValue/100/peopleValue;
-}
-
-function resetValues() {
-    billValue = 0;
-    percentValue = 0;
-    peopleValue = 0;
-    bill.value = "";
-    people.value = "";
-    for (let i of tipPercent) {
-        if (i.classList[1] == "custom") {
-            i.value = "";
-        }
-        else {
-            i.classList.remove("selected");
-        }
+    evt.preventDefault();
+    result = Number((billValue/peopleValue));
+    console.log(result)
+    if (result !== Infinity){
+        tipAmount.innerText = `$${Math.round(result*percentValue/100)}`;
+        totalAmount.innerText = `$${Math.round(result)}`;
+    }
+    else {
+        tipAmount.innerText = "$0.00";
+        totalAmount.innerText = "$0.00";
     }
 }
 
-if (billValue !== "" && percentValue !== "" && peopleValue !== ""){
-    tipCalculator();
+function resetValues() {
+   window.location.reload();
 }
 
