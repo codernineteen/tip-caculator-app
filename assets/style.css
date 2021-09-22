@@ -98,14 +98,18 @@ h1 {
 
 .hidden {
   display: none;
-  color: #e37051;
   position: absolute;
   top: 0;
   right: 0;
+  color: #e37051;
 }
 
 .hiddenTwo {
-  box-shadow: 0 0 0 2px #e37051;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e37051;
 }
 
 .percentage {
@@ -149,6 +153,11 @@ h1 {
 .custom:focus::placeholder {
   color: transparent;
 }
+
+.hiddenThree {
+  box-shadow: 0 0 0 2px #e37051;
+}
+/* result */
 
 .resultSection {
   background-color: #00474b;
