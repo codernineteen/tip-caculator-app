@@ -87,7 +87,7 @@ function keyupFuncThree(evt) {
     }
 }
 
-function tipCalculator() {
+function tipCalculator(evt) {
     evt.preventDefault();
     result = Number((billValue/peopleValue));
     console.log(result)

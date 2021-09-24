@@ -21,6 +21,13 @@ body {
   background-color: #c5e4e7;
 }
 
+@media (max-width: 375px) {
+  body {
+    height: auto;
+    margin-top: 4rem;
+  }
+}
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -43,6 +50,16 @@ h1 {
   border-radius: 3rem;
 }
 
+@media (max-width: 375px) {
+  .flexContainer {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
 .wrapperCol {
   flex: 1;
   padding: 4rem;
@@ -56,9 +73,30 @@ h1 {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 375px) {
+  .wrapperCol {
+    padding: 2rem;
+  }
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .custom {
+    width: 13.75rem;
+    padding: 0;
+  }
+}
+
 .eachSection {
   margin-bottom: 4rem;
   position: relative;
+}
+
+@media (max-width: 375px) {
+  .eachSection:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .leftHeaders {
@@ -176,6 +214,9 @@ h1 {
   height: 100%;
   border-radius: 2rem;
   padding: 4rem;
+}
+
+@media (max-width: 375px) {
 }
 
 .gridContainerTwo {
