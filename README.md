@@ -27,9 +27,8 @@ Users should be able to:
 
 ![Full screen page](images/sc1.png)
 
-Mobile screen page
-<img src="images/sc2.png" width: "auto" height: "auto">
-<img src="images/sc3.png" width: "auto" height: "auto">
+![Mobile screen page1](images/sc2.png)
+![Mobile screen page2](images/sc3.png)
 
 ## My process
 
